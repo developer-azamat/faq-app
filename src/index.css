@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-site{
+    /* background: url(https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    position: relative;
+}
+.bg-site.active{
+    background: url(https://static.vecteezy.com/system/resources/previews/003/823/542/original/spices-for-use-as-cooking-ingredients-on-a-wooden-background-with-fresh-vegetables-healthy-food-herbs-organic-vegetables-on-the-table-raw-materials-of-cooking-preparation-tom-yum-free-photo.jpg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bottom-weather{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    position: absolute;
+    bottom: 0;
+    gap: 40px;
+    padding: 20px 20px;
+    padding-right: 30%;
+    color: white;
 }
